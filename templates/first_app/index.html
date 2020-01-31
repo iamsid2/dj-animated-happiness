@@ -1,13 +1,16 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html>
     <head>
         <meta charset="utf-8">
-        <title>First App</title>
+        <title>Django Guitar</title>
+        <link rel="stylesheet" href="{% static "css/style.css" %}" />
     </head>
     <body>
       <div style="text-align: center;">
         <h1>My First Django App</h1>
         <h3> {{ from_backend }}  </h3>
+        <img src="{% static "images/django.jpg" %}" alt="Django Img">
       </div>
     </body>
 </html>
